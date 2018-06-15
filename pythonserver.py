@@ -6,7 +6,7 @@ application = app   # passenger_wsgi requires it
 
 @app.route('/')
 def under_development():
-    return 'Site is under development yet!'
+    return 'Site is under construction yet!'
 
 
 if __name__ == '__main__':
