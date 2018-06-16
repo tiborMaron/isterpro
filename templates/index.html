@@ -3,8 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>ISTER PRO-INVEST</title>
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/raphael.min.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/map.js') }}" defer></script>
     </head>
     <body>
-        <p>Site is under development yet!</p>
+        <div id="map"></div>
+        <div>
+            <p id="selected-country"></p>
+        </div>
     </body>
 </html>
