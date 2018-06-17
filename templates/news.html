@@ -4,85 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ISTER PRO-INVEST</title>
+
+    <!-- Imported CSS files -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Imported JS files -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
             integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
             integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
             integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-            crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename = "js/layout.js") }}" defer></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/justified-nav.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+            crossorigin="anonymous" defer></script>
+
+    <!-- Own CSS files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+
+    <!-- Own JS files -->
+
 </head>
 <body>
 <div class="container">
 
-    <div class="masthead">
-        <h1 class="text-muted">ISTER PRO-INVEST</h1>
-
-        {#<nav class="navbar navbar-light bg-faded rounded mb-3">
-            <div class="navbar-toggleable-md" id="navbarCollapse">
-                <ul class="nav navbar-nav text-md-center justify-content-md-between">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ url_for("news") }}">News<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="{{ url_for("tenders") }}">Tenders</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="{{ url_for("supporters") }}">Supporters</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="{{ url_for("programs") }}">Programs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for("contact") }}">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>#}
-
-        <div id='cssmenu'>
-            <ul>
-                <li><a href='#'>Home</a></li>
-                <li class='active'><a href='#'>Products</a>
-                    <ul>
-                        <li><a href='#'>Product 1</a>
-                            <ul>
-                                <li><a href='#'>Sub Product</a></li>
-                                <li><a href='#'>Sub Product</a></li>
-                            </ul>
-                        </li>
-                        <li><a href='#'>Product 2</a>
-                            <ul>
-                                <li><a href='#'>Sub Product</a></li>
-                                <li><a href='#'>Sub Product</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href='#'>About</a></li>
-                <li><a href='#'>Contact</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Jumbotron -->
-    <!--<div class="jumbotron">
-      <h1>Marketing stuff!</h1>
-      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-      <p><a class="btn btn-lg btn-success" href="https://v4-alpha.getbootstrap.com/examples/justified-nav/#" role="button">Get started today</a></p>
-    </div>-->
-
+    {% include 'header.html' %}
 
     <!-- Example row of columns -->
     <div class="row">
@@ -112,10 +59,7 @@
         </div>
     </div>
 
-    <!-- Site footer -->
-    <footer class="footer">
-        <p>© Company 2017</p>
-    </footer>
+    {% include 'footer.html' %}
 
 </div> <!-- /container -->
 </body>
