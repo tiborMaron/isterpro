@@ -15,7 +15,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
             integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
             crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename = "js/layout.js") }}" defer></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/justified-nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
 </head>
 <body>
 <div class="container">
@@ -23,7 +25,7 @@
     <div class="masthead">
         <h1 class="text-muted">ISTER PRO-INVEST</h1>
 
-        <nav class="navbar navbar-light bg-faded rounded mb-3">
+        {#<nav class="navbar navbar-light bg-faded rounded mb-3">
             <div class="navbar-toggleable-md" id="navbarCollapse">
                 <ul class="nav navbar-nav text-md-center justify-content-md-between">
                     <li class="nav-item active">
@@ -47,7 +49,31 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav>#}
+
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='#'>Home</a></li>
+                <li class='active'><a href='#'>Products</a>
+                    <ul>
+                        <li><a href='#'>Product 1</a>
+                            <ul>
+                                <li><a href='#'>Sub Product</a></li>
+                                <li><a href='#'>Sub Product</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#'>Product 2</a>
+                            <ul>
+                                <li><a href='#'>Sub Product</a></li>
+                                <li><a href='#'>Sub Product</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#'>Contact</a></li>
+            </ul>
+        </div>
     </div>
 
     <!-- Jumbotron -->
@@ -56,7 +82,6 @@
       <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
       <p><a class="btn btn-lg btn-success" href="https://v4-alpha.getbootstrap.com/examples/justified-nav/#" role="button">Get started today</a></p>
     </div>-->
-
 
 
     <!-- Example row of columns -->
