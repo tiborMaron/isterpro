@@ -1,0 +1,30 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6" id="logo">
+            <h1>ISTER PRO-INVEST</h1>
+        </div>
+        <div class="col-sm-6 align-self-end" id="social-media-bar">
+            <a href="https://facebook.com">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://youtube.com">
+                <i class="fab fa-youtube-square"></i>
+            </a>
+        </div>
+    </div>
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='{{ url_for('news') }}'>Hírek</a></li>
+            <li><a href='{{ url_for('tenders') }}'>Pályázatok</a>
+            <li><a href='{{ url_for('supporters') }}'>Támogatók, társszervezetek</a></li>
+            <li><a href='{{ url_for('programs') }}'>Programok</a></li>
+            <li><a href='{{ url_for('contact') }}'>Kapcsolat</a></li>
+        </ul>
+    </div>
+</div>
