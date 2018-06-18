@@ -20,11 +20,11 @@
     </div>
     <div id='cssmenu'>
         <ul>
-            <li><a href='#'>Hírek</a></li>
-            <li class='active'><a href='#'>Pályázatok</a>
-            <li><a href='#'>Támogatók, társszervezetek</a></li>
-            <li><a href='#'>Programok</a></li>
-            <li><a href='#'>Kapcsolat</a></li>
+            <li><a href='{{ url_for('news') }}'>Hírek</a></li>
+            <li><a href='{{ url_for('tenders') }}'>Pályázatok</a>
+            <li><a href='{{ url_for('supporters') }}'>Támogatók, társszervezetek</a></li>
+            <li><a href='{{ url_for('programs') }}'>Programok</a></li>
+            <li><a href='{{ url_for('contact') }}'>Kapcsolat</a></li>
         </ul>
     </div>
 </div>
