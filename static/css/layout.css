@@ -24,3 +24,10 @@
 .fa-youtube-square:hover {
     color: #cc181e;
 }
+
+#mynetwork {
+    width: 800px;
+    height: 800px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
