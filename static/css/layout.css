@@ -26,8 +26,8 @@
 }
 
 #mynetwork {
-    width: 800px;
-    height: 800px;
+    width: 100%;
+    height: 600px;
     border: 1px solid lightgray;
     background-color: white;
 }
