@@ -91,7 +91,7 @@ for (let i = 0; i < countries.length; i++) {
 
     if (countries[i].data('id') === 'HU') {
         countries[i].mouseup(function (e) {
-            window.location.href = '/hu';
+            window.location.href = '/hu/news';
         })
     }
 }
