@@ -32,7 +32,7 @@
     height: 100px;
     max-height: 100px;
     border-bottom-style: solid;
-    padding-left: 6%;
+    padding-left: 8%;
 }
 
 #main-supporter-li{
@@ -87,9 +87,57 @@ figcaption{
 .language-selector{
     display: inline-grid;
     border-style: solid;
-    width: 7%;
+    width: 10%;
+    min-width: 80px;
     float: right;
     height: 100%;
+}
+
+#mobile-menu{
+    font-size: 28px;
+    position: relative;
+    top: 23px;
+}
+
+#mobile-menu-li{
+    position: relative;
+    top: -20px;
+
+}
+
+#side-menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#side-menu a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: lightgray;
+    display: block;
+    transition: 0.3s;
+}
+
+#side-menu a:hover{
+    color: white;
+}
+
+#side-menu .btn-close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 @media(max-width: 1380px){
@@ -101,6 +149,69 @@ figcaption{
     }
     #main-supporter-li{
         margin-left: 0%;
+    }
+}
+
+@media (min-width:1165px ) {
+    #navbar #mobile-menu-li{
+        display: none;
+    }
+}
+
+@media(max-width: 1165px){
+    #navbar .menu-li{
+        display: none;
+    }
+    .language-selector{
+        width: 80px;
+    }
+
+    #navbar #mobile-menu-li{
+        display: inline-grid;
+    }
+}
+
+@media (max-width: 560px) {
+    #navbar #logo-container{
+        height:50px;
+
+    }
+    #navbar #logo-container-li{
+        position: relative;
+        top: -20px;
+    }
+
+    #navbar #logo{
+        position: relative;
+        top: 20px;
+    }
+
+     #mobile-menu-li:hover{
+        background-color: white;
+    }
+}
+
+@media (max-width: 450px) {
+    #navbar #main-supporter-container{
+        height: 50px;
+    }
+    #navbar #logo-container-li{
+        top:0px;
+    }
+    #navbar{
+        height: 80px;
+    }
+    .language-selector{
+        display: none;
+    }
+    #mobile-menu{
+        top: 26px;
+    }
+
+
+    #navbar #logo{
+        position: relative;
+        top: 0px;
     }
 }
 

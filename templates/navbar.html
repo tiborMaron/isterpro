@@ -1,7 +1,8 @@
 <div id='navbar'>
 
     <ul>
-        <li><a href="#"><div id="logo-container"><img id="logo" src="/static/images/navbar/logo.png" alt=""></div></a></li>
+        <li id="mobile-menu-li"><i class="fas fa-bars" id="mobile-menu" onclick="openSlideMenu()"></i></li>
+        <li id="logo-container-li"><a href="#"><div id="logo-container"><img id="logo" src="/static/images/navbar/logo.png" alt=""></div></a></li>
         <li id="main-supporter-li"><a href="#"><div id="main-supporter-container"><img id="main-supporter" src="/static/images/navbar/lorem.png" alt=""></div></a></li>
         <li class="menu-li" id="news">
             <a href="#">
@@ -43,15 +44,14 @@
     <div class="language-selector">
 
     </div>
+</div>
 
+<div id="side-menu">
+    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+    <a href="#">Hírek</a>
+    <a href="#">Partnerek</a>
+    <a href="#">Programok</a>
+    <a href="#">Pályázatok</a>
+    <a href="#">Támogatók</a>
 
-
-    {#<ul>
-        <li><a href='{{ url_for('news') }}'>Hírek</a></li>
-        <li><a href='{{ url_for('partners') }}'>Partnerek</a>fgdf
-        <li><a href='{{ url_for('programs') }}'>Programok</a></li>
-        <li><a href='{{ url_for('tenders') }}'>Pályázatok</a></li>
-        <li><a href='{{ url_for('supporters') }}'>Támogatók</a></li>
-        <li><a href='{{ url_for('contact') }}'>Kapcsolat</a></li>
-    </ul>#}
 </div>
