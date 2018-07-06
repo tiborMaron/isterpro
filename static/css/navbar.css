@@ -1,0 +1,108 @@
+#navbar #logo-container{
+    height: 80px;
+}
+
+#navbar #logo{
+    height: 100%;
+    width: auto;
+}
+
+#navbar ul{
+    list-style: none;
+    margin: auto;
+    height: 100%;
+    padding: 0;
+    display: inline;
+}
+
+#navbar li{
+    height: 100%;
+    display: inline-grid;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#navbar li:hover{
+    background-color: #f7f7f7;
+}
+
+#navbar{
+    height: 100px;
+    max-height: 100px;
+    border-bottom-style: solid;
+    padding-left: 6%;
+}
+
+#main-supporter-li{
+    margin-left: 2%;
+    width: 85px;
+
+
+}
+
+#navbar #main-supporter-container{
+    height: 80px;
+}
+
+#navbar #main-supporter{
+    height: 100%;
+    width: auto;
+}
+
+#navbar .menu-point{
+    height: 40px;
+    position: relative;
+    width: 97px;
+
+}
+
+#navbar .menu-img{
+    height: 100%;
+    width: auto;
+}
+
+#navbar .menu-li{
+    position: relative;
+    top: -20px;
+    text-align: center;
+
+}
+
+#navbar a{
+    text-decoration: none;
+
+}
+
+figcaption{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#news{
+    margin-left: 10%;
+}
+
+.language-selector{
+    display: inline-grid;
+    border-style: solid;
+    width: 7%;
+    float: right;
+    height: 100%;
+}
+
+@media(max-width: 1380px){
+    #news{
+        margin-left: 1%;
+    }
+    #navbar{
+        padding-left: 0%;
+    }
+    #main-supporter-li{
+        margin-left: 0%;
+    }
+}
+
+
+
