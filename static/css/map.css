@@ -1,10 +1,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    text-align: center;
 }
 
 #map {
@@ -13,11 +9,42 @@ body, html {
     width: 60%;
 }
 
-img {
-    max-width: 100%;
+h1, h2 {
+    font-family: Fira Sans, sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    color: #4F4F4F
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.container {
+    width: 90%;
     height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    height: 40px;
+}
+
+.flag {
+    height: 80px;
 }
 
 .row {
-    margin: 5%;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 90%;
+    align-items: center;
+}
+
+.row img {
+    margin: 0 auto;
+    display: block;
 }
