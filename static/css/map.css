@@ -12,3 +12,12 @@ body, html {
     height: 80%;
     width: 60%;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    margin: 5%;
+}
