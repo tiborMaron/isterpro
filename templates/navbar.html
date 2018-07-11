@@ -2,42 +2,51 @@
 
     <ul>
         <li id="mobile-menu-li"><i class="fas fa-bars" id="mobile-menu" onclick="openSlideMenu()"></i></li>
-        <li id="logo-container-li"><a href="#"><div id="logo-container"><img id="logo" src="/static/images/navbar/logo.png" alt=""></div></a></li>
-        <li id="main-supporter-li"><a href="#"><div id="main-supporter-container"><img id="main-supporter" src="/static/images/navbar/lorem.png" alt=""></div></a></li>
+        <li id="logo-container-li"><a href="{{ url_for('index') }}">
+            <div id="logo-container"><img id="logo" src="/static/images/navbar/logo.png" alt=""></div>
+        </a></li>
+        <li id="main-supporter-li"><a href="#">
+            <div id="main-supporter-container"><img id="main-supporter" src="/static/images/navbar/lorem.png" alt="">
+            </div>
+        </a></li>
         <li class="menu-li" id="news">
-            <a href="#">
-                <div class="menu-point" >
+            <a href="{{ url_for('news') }}">
+                <div class="menu-point">
                     <img class="menu-img" src="/static/images/navbar/kek.png" alt="">
                     <figcaption>HÍREK</figcaption>
                 </div>
             </a>
         </li>
         <li class="menu-li">
-            <a href="#"><div class="menu-point">
-                <img class="menu-img" src="/static/images/navbar/zold.png" alt="">
-                <figcaption>PARTNEREK</figcaption>
-            </div>
+            <a href="{{ url_for('partners') }}">
+                <div class="menu-point">
+                    <img class="menu-img" src="/static/images/navbar/zold.png" alt="">
+                    <figcaption>PARTNEREK</figcaption>
+                </div>
             </a>
         </li>
         <li class="menu-li">
-            <a href="#"><div class="menu-point">
-                <img class="menu-img" src="/static/images/navbar/sarga.png" alt="">
-                <figcaption>PROGRAMOK</figcaption>
-            </div>
+            <a href="{{ url_for('programs') }}">
+                <div class="menu-point">
+                    <img class="menu-img" src="/static/images/navbar/sarga.png" alt="">
+                    <figcaption>PROGRAMOK</figcaption>
+                </div>
             </a>
         </li>
         <li class="menu-li">
-            <a href="#"><div class="menu-point">
-                <img class="menu-img" src="/static/images/navbar/narancs.png" alt="">
-                <figcaption>PÁLYÁZATOK</figcaption>
-            </div>
+            <a href="{{ url_for('tenders') }}">
+                <div class="menu-point">
+                    <img class="menu-img" src="/static/images/navbar/narancs.png" alt="">
+                    <figcaption>PÁLYÁZATOK</figcaption>
+                </div>
             </a>
         </li>
         <li class="menu-li">
-            <a href="#"><div class="menu-point">
-                <img class="menu-img" src="/static/images/navbar/piros.png" alt="">
-                <figcaption>TÁMOGATÓK</figcaption>
-            </div>
+            <a href="{{ url_for('supporters') }}">
+                <div class="menu-point">
+                    <img class="menu-img" src="/static/images/navbar/piros.png" alt="">
+                    <figcaption>TÁMOGATÓK</figcaption>
+                </div>
             </a>
         </li>
     </ul>
@@ -48,10 +57,9 @@
 
 <div id="side-menu">
     <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
-    <a href="#">Hírek</a>
-    <a href="#">Partnerek</a>
-    <a href="#">Programok</a>
-    <a href="#">Pályázatok</a>
-    <a href="#">Támogatók</a>
-
+    <a href="{{ url_for('news') }}">Hírek</a>
+    <a href="{{ url_for('partners') }}">Partnerek</a>
+    <a href="{{ url_for('programs') }}">Programok</a>
+    <a href="{{ url_for('tenders') }}">Pályázatok</a>
+    <a href="{{ url_for('supporters') }}">Támogatók</a>
 </div>
