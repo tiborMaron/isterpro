@@ -1,0 +1,156 @@
+
+.carousel-item{
+    max-width: 100%;
+}
+
+.carousel{
+    max-height: calc(100vw * 0.2615);
+}
+
+.carousel-img{
+    width: 100%;
+    height: calc(100% * 0.2615);
+    object-fit: contain;
+}
+
+
+#carousel-text{
+    text-align: center;
+    position: relative;
+    top: calc(100vw * 0.2615/2 *-1.3 + 1vw * -1.2);
+    font-size: 48px;
+    font-family: Fira Sans, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+#carousel-text-second-line{
+    font-family: Fira Sans, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+#carousel-img-container{
+    padding-left: 5%;
+    width: 100%;
+    padding-right: 5%;
+}
+
+.social-img-container{
+    display: inline-block;
+    width: 25px;
+    margin-left: 1px;
+    position: relative;
+    top:-40px
+}
+
+.social-img{
+    width: 100%;
+    height: auto;
+}
+
+#ship-container{
+    display: inline-block;
+    width: 115px;
+    float: right;
+    position:relative;
+    top: -90px;
+}
+#ship-img{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+
+}
+
+@media (max-width: 1200px){
+    #carousel-text{
+        top: calc(100vw * 0.2615/2 *-1.3 + 1vw * -2);
+    }
+    #ship-container{
+        width: 90px;
+        top: -70px;
+    }
+}
+
+@media (max-width: 1000px){
+    #carousel-text{
+        top: calc(100vw * 0.2615/2 *-1.3 + 1vw * -3);
+    }
+}
+
+@media (max-width: 950px){
+    #carousel-text{
+        top: calc(100vw * 0.2615/2 *-1.3);
+        font-size: 36px;
+    }
+    #carousel-text-second-line{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    #carousel-text {
+        top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -2);
+        font-size: 36px;
+    }
+    #ship-container{
+        width: 80px;
+        top: -60px;
+    }
+}
+
+@media (max-width: 750px) {
+    #carousel-text {
+        top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -4);
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 650px) {
+    #carousel-text {
+        top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -5);
+        font-size: 24px;
+    }
+    .social-img-container{
+        width: 20px;
+        top: -30px;
+    }
+}
+
+@media (max-width: 550px){
+    #ship-container{
+        width: 65px;
+        top: -55px;
+    }
+}
+
+@media (max-width: 500px) {
+    #carousel-text {
+        top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -6);
+        font-size: 24px;
+    }
+    #carousel-text-second-line{
+        font-size: 18px;
+    }
+
+    .social-img-container{
+        width: 20px;
+        top: -25px;
+    }
+}
+
+@media (max-width: 400px){
+    #ship-container{
+        width: 55px;
+        top: -45px;
+    }
+}
+
+
+
+
+
