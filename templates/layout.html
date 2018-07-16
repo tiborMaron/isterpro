@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}ISTER PRO-INVEST{% endblock %}</title>
+
+    <!-- General imports -->
+    {% include 'imports.html' %}
+
+    <!-- Custom imports -->
+    {% block custom_imports %}{% endblock %}
+</head>
+<body {% block bodyTags %}{% endblock %}>
+{% include 'navbar.html' %}
+
+<!-- Carousel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="carousel-img" src="{% block imageLocation %}{% endblock %}">
+        </div>
+    </div>
+    <p id="carousel-text">{% block firstlineText %}{% endblock %}<br>
+        <span id="carousel-text-second-line">{% block secondlineText %}{% endblock %}</span>
+    </p>
+</div>
+<div id="carousel-img-container">
+    <div class="social-img-container">
+        <a href="https://facebook.com"><img class="social-img"
+                                            src="{{ url_for("static", filename="images/carousel/fb.png") }}"
+                                            alt="Facebook"></a>
+    </div>
+    <div class="social-img-container">
+        <a href="https://plus.google.com"><img class="social-img"
+                                               src="{{ url_for("static", filename="images/carousel/g+.png") }}"
+                                               alt="Google+"></a>
+    </div>
+    <div class="social-img-container">
+        <a href="https://instagram.com"><img class="social-img"
+                                             src="{{ url_for("static", filename="images/carousel/insta.png") }}"
+                                             alt="Instagram"></a>
+    </div>
+    <div id="ship-container">
+        <a href="{{ url_for('logbook') }}"><img id="ship-img"
+                                                src="{{ url_for("static", filename="images/carousel/ship.png") }}"
+                                                alt="Logbook"></a>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+{% include 'footer.html' %}
+
+</body>
+</html>

@@ -1,45 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ISTER PRO-INVEST</title>
-
-    {% include "imports.html" %}
-
-</head>
-<body>
-
-{% include 'navbar.html' %}
-
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="carousel-img" src="{{ url_for("static", filename="images/carousel/kezdo1.png") }}" alt="First slide">
-        </div>
-        <div class="carousel-item">
-            <img class="carousel-img" src="{{ url_for("static", filename="images/carousel/kezdo2.png") }}" alt="Second slide">
-        </div>
-    </div>
-    <p id="carousel-text">A Duna 1000 arca <br> <span id="carousel-text-second-line">"Dunán innen, Dunán túl..." </span></p>
-</div>
-<div id="carousel-img-container">
-        <div class="social-img-container">
-            <a href="#"><img class="social-img" src="{{ url_for("static", filename="images/carousel/fb.png") }}" alt=""></a>
-        </div>
-        <div class="social-img-container">
-            <a href="#"><img class="social-img" src="{{ url_for("static", filename="images/carousel/g+.png") }}" alt=""></a>
-        </div>
-        <div class="social-img-container">
-            <a href="#"><img class="social-img" src="{{ url_for("static", filename="images/carousel/insta.png") }}" alt=""></a>
-        </div>
-        <div id="ship-container">
-            <a href="#"><img id="ship-img" src="{{ url_for("static", filename="images/carousel/ship.png") }}" alt=""></a>
-        </div>
-    </div>
-
-{% include 'footer.html' %}
-
-</body>
-</html>
+{% extends 'layout.html' %}
+{% block title %}Főoldal - ISTER PRO-INVEST{% endblock %}
+{% block imageLocation %}{{ url_for("static", filename="images/carousel/index.png") }}{% endblock %}
+{% block firstlineText %}ISTER PRO-INVEST{% endblock %}
+{% block secondlineText %}A Duna 1000 arca{% endblock %}

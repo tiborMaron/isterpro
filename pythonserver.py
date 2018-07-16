@@ -44,6 +44,11 @@ def contact():
     return render_template('contact.html')
 
 
+@app.route('/hu/logbook')
+def logbook():
+    return render_template('logbook.html')
+
+
 @app.route('/under-development')
 def under_development():
     return render_template('under-development.html')
