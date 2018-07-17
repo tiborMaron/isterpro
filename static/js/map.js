@@ -246,13 +246,9 @@ let city09_4 = rsr.path("M4276 6438l0 -1c-1,-3 -2,-5 -4,-8 -6,-7 -17,-7 -24,-1 -
 // Logic
 ///
 for (let i = 0; i < countries.length; i++) {
-    countries[i].node.setAttribute('stroke', '#146eff');
-    countries[i].node.setAttribute('stroke-width', '1');
-    countries[i].node.setAttribute('stroke-opacity', '1');
 
     countries[i].mouseover(function (e) {
-        this.node.style.opacity = 0.5;
-        document.getElementById('selected-country').innerHTML = this.data('name');
+        this.node.style.opacity = 0.75;
     });
 
     countries[i].mouseout(function (e) {
