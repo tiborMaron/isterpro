@@ -1,21 +1,16 @@
 footer {
     background-color: #7688A1;
-}
-
-.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 50px;
+    line-height: 50px;
 }
 
 .footer_link_container a {
     font-size: 14px;
     color: white;
     padding-right: 25px;
-}
-
-footer .container .row {
-    padding: 12px;
 }
 
 .social_img_container {
