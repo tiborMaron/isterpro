@@ -4,3 +4,36 @@
 {% block firstlineText %}Támogatók{% endblock %}
 {% block subpage_class %}supporters{% endblock %}
 {% block subpage_title %}TÁMOGATÓINK{% endblock %}
+{% block content %}
+    <div id="support-container">
+        <div id="supporter-heading-cont" >
+            FŐ TÁMOGATÓ
+        </div>
+        <div id="supporter-content">
+            <div id="main-supp-cont">
+                <img src="{{ url_for("static", filename="images/supporters/lorems05.png") }}" id="main-supp-img" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat, arcu non volutpat interdum, ipsum erat imperdiet purus, in varius odio purus id felis. Donec tincidunt efficitur lorem, id tristique nibh interdum eget. Suspendisse rutrum imperdiet mi pulvinar faucibus. Nam congue tincidunt cursus. Donec quis bibendum tellus, ut vehicula felis. Vestibulum convallis quam quis aliquet sagittis. Quisque venenatis mollis mauris, id commodo sapien vehicula in. Aenean ultricies mollis fringilla. Praesent risus libero, tincidunt at mi eu, laoreet efficitur erat.</p>
+        </div>
+        <div id="supporter-other">
+            <div class="supporter-other-img-cont">
+                <img class="supporter-other-img" src="{{ url_for("static", filename="images/supporters/lorems01.png") }}" alt="">
+            </div>
+            <div class="supporter-other-img-cont">
+                <img class="supporter-other-img" src="{{ url_for("static", filename="images/supporters/lorems02.png") }}" alt="">
+            </div>
+            <div class="supporter-other-img-cont">
+                <img class="supporter-other-img" src="{{ url_for("static", filename="images/supporters/lorems03.png") }}" alt="">
+            </div>
+            <div class="supporter-other-img-cont">
+                <img class="supporter-other-img" src="{{ url_for("static", filename="images/supporters/lorems04.png") }}" alt="">
+            </div>
+            <div class="supporter-other-img-cont">
+                <img class="supporter-other-img" src="{{ url_for("static", filename="images/supporters/lorems05.png") }}" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock %}
