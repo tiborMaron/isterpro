@@ -5,6 +5,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
 }
 
 .index {
@@ -33,4 +34,11 @@ body {
 
 .logbook {
     background-color: #56698F;
+}
+
+.content {
+    padding: 2% 15%;
+    font-size: 20px;
+    text-align: justify;
+    text-align-last: center;
 }
