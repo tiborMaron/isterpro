@@ -36,9 +36,19 @@ body {
     background-color: #56698F;
 }
 
+.tiny-content {
+    padding: 2% 15%;
+    font-size: 18px;
+    text-align: center;
+}
+
 .content {
     padding: 2% 15%;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
-    text-align-last: center;
+}
+
+.content img {
+    float: left;
+    padding-right: 10px;
 }
