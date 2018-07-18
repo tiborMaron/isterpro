@@ -1,10 +1,37 @@
 #navbar #logo-container{
-    height: 80px;
+    height: 64px;
+    margin-top: 8px;
+
 }
 
 #navbar #logo{
     height: 100%;
     width: auto;
+}
+
+.language-selector{
+    display: flex;
+    
+    width: 10%;
+    min-width: 80px;
+    float: right;
+    height: 100%;
+    align-items: center;
+}
+
+#navbar .language-img-cont{
+    height: 35px;
+    width: min-content;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+#navbar .language-img{
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    float: left;
+
 }
 
 #navbar ul{
@@ -31,7 +58,6 @@
 #navbar{
     height: 100px;
     max-height: 100px;
-    
     padding-left: 8%;
 }
 
@@ -84,14 +110,7 @@ figcaption{
     margin-left: 10%;
 }
 
-.language-selector{
-    display: inline-grid;
-    border-style: solid;
-    width: 10%;
-    min-width: 80px;
-    float: right;
-    height: 100%;
-}
+
 
 #mobile-menu{
     font-size: 28px;
