@@ -1,10 +1,36 @@
 #navbar #logo-container{
-    height: 80px;
+    height: 64px;
+    margin-top: 8px;
 }
 
 #navbar #logo{
     height: 100%;
     width: auto;
+}
+
+.language-selector{
+    display: flex;
+
+    width: 10%;
+    min-width: 80px;
+    float: right;
+    height: 100%;
+    align-items: center;
+}
+
+#navbar .language-img-cont{
+    height: 35px;
+    width: min-content;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+#navbar .language-img{
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    float: left;
+
 }
 
 #navbar ul{
@@ -31,15 +57,12 @@
 #navbar{
     height: 100px;
     max-height: 100px;
-    
     padding-left: 8%;
 }
 
 #main-supporter-li{
     margin-left: 2%;
     width: 85px;
-
-
 }
 
 #navbar #main-supporter-container{
@@ -84,14 +107,34 @@ figcaption{
     margin-left: 10%;
 }
 
-.language-selector{
-    display: inline-grid;
-    border-style: solid;
-    width: 10%;
-    min-width: 80px;
-    float: right;
+#navbar #dots-img{
     height: 100%;
+    width: auto;
+    position: relative;
+    top:25px;
 }
+
+#dots-li{
+    position:relative;
+    top: -26px;
+    margin-left: 2%;
+}
+
+#dots-li:hover{
+    background-color: white !important;
+}
+
+#navbar #dots-cont{
+    height: 10px;
+    transition-property: height;
+    transition-duration: 0.1s;
+}
+
+#dots-li:hover #dots-cont{
+    height: 12px;
+}
+
+
 
 #mobile-menu{
     font-size: 28px;
@@ -140,7 +183,13 @@ figcaption{
     margin-left: 50px;
 }
 
-@media(max-width: 1380px){
+@media (max-width: 1500px) {
+    #dots-li{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1460px){
     #news{
         margin-left: 1%;
     }
@@ -152,13 +201,13 @@ figcaption{
     }
 }
 
-@media (min-width:1165px ) {
+@media (min-width:1180px ) {
     #navbar #mobile-menu-li{
         display: none;
     }
 }
 
-@media(max-width: 1165px){
+@media(max-width: 1180px){
     #navbar .menu-li{
         display: none;
     }
@@ -191,6 +240,12 @@ figcaption{
     }
 }
 
+@media (max-width: 505px){
+    .language-selector{
+        display: none;
+    }
+}
+
 @media (max-width: 450px) {
     #navbar #main-supporter-container{
         height: 50px;
@@ -201,9 +256,7 @@ figcaption{
     #navbar{
         height: 80px;
     }
-    .language-selector{
-        display: none;
-    }
+
     #mobile-menu{
         top: 26px;
     }
