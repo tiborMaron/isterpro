@@ -1,7 +1,6 @@
 #navbar #logo-container{
     height: 64px;
     margin-top: 8px;
-
 }
 
 #navbar #logo{
@@ -11,7 +10,7 @@
 
 .language-selector{
     display: flex;
-    
+
     width: 10%;
     min-width: 80px;
     float: right;
@@ -64,8 +63,6 @@
 #main-supporter-li{
     margin-left: 2%;
     width: 85px;
-
-
 }
 
 #navbar #main-supporter-container{
@@ -108,6 +105,33 @@ figcaption{
 
 #news{
     margin-left: 10%;
+}
+
+#navbar #dots-img{
+    height: 100%;
+    width: auto;
+    position: relative;
+    top:25px;
+}
+
+#dots-li{
+    position:relative;
+    top: -26px;
+    margin-left: 2%;
+}
+
+#dots-li:hover{
+    background-color: white !important;
+}
+
+#navbar #dots-cont{
+    height: 10px;
+    transition-property: height;
+    transition-duration: 0.1s;
+}
+
+#dots-li:hover #dots-cont{
+    height: 12px;
 }
 
 
@@ -159,7 +183,13 @@ figcaption{
     margin-left: 50px;
 }
 
-@media(max-width: 1380px){
+@media (max-width: 1500px) {
+    #dots-li{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1460px){
     #news{
         margin-left: 1%;
     }
@@ -171,13 +201,13 @@ figcaption{
     }
 }
 
-@media (min-width:1165px ) {
+@media (min-width:1180px ) {
     #navbar #mobile-menu-li{
         display: none;
     }
 }
 
-@media(max-width: 1165px){
+@media(max-width: 1180px){
     #navbar .menu-li{
         display: none;
     }
@@ -210,6 +240,12 @@ figcaption{
     }
 }
 
+@media (max-width: 505px){
+    .language-selector{
+        display: none;
+    }
+}
+
 @media (max-width: 450px) {
     #navbar #main-supporter-container{
         height: 50px;
@@ -220,9 +256,7 @@ figcaption{
     #navbar{
         height: 80px;
     }
-    .language-selector{
-        display: none;
-    }
+
     #mobile-menu{
         top: 26px;
     }
