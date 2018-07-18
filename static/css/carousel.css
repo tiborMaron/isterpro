@@ -1,23 +1,22 @@
 
-.carousel-item{
+.carousel-item {
     max-width: 100%;
 }
 
-.carousel{
+.carousel {
     max-height: calc(100vw * 0.2615);
 }
 
-.carousel-img{
+.carousel-img {
     width: 100%;
     height: calc(100% * 0.2615);
     object-fit: contain;
 }
 
-
-#carousel-text{
+#carousel-text {
     text-align: center;
     position: relative;
-    top: calc(100vw * 0.2615/2 *-1.3 + 1vw * -1.2);
+    top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -1.2);
     font-size: 48px;
     font-family: Fira Sans, sans-serif;
     font-style: italic;
@@ -26,68 +25,88 @@
     margin: 0;
 }
 
-#carousel-text-second-line{
+#carousel-text-second-line {
     font-family: Fira Sans, sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 36px;
 }
 
-#carousel-img-container{
-    padding-left: 5%;
+#carousel-img-container {
+    /*padding-left: 5%;*/
     width: 100%;
-    padding-right: 5%;
+    /*padding-right: 5%;*/
 }
 
-.social-img-container{
+.social-img-container {
     display: inline-block;
     width: 25px;
     margin-left: 1px;
     position: relative;
-    top:-40px
+    top: -40px
 }
 
-.social-img{
+.social-img-container:first-child {
+    margin-left: 5%;
+}
+
+.social-img {
     width: 100%;
     height: auto;
 }
 
-#ship-container{
+#carousel-img-container .title {
+    position: relative;
+    height: 70px;
+    font-size: 28px;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    top: -15px;
+}
+
+#ship-container {
+    margin-right: 5%;
     display: inline-block;
     width: 115px;
     float: right;
-    position:relative;
-    top: -90px;
+    position: relative;
+    top: -180px;
 }
-#ship-img{
+
+#ship-img {
     width: 100%;
     height: auto;
     z-index: -1;
 
 }
 
-@media (max-width: 1200px){
-    #carousel-text{
-        top: calc(100vw * 0.2615/2 *-1.3 + 1vw * -2);
+@media (max-width: 1200px) {
+    #carousel-text {
+        top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -2);
     }
-    #ship-container{
+
+    #ship-container {
         width: 90px;
         top: -70px;
     }
 }
 
-@media (max-width: 1000px){
-    #carousel-text{
-        top: calc(100vw * 0.2615/2 *-1.3 + 1vw * -3);
+@media (max-width: 1000px) {
+    #carousel-text {
+        top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -3);
     }
 }
 
-@media (max-width: 950px){
-    #carousel-text{
-        top: calc(100vw * 0.2615/2 *-1.3);
+@media (max-width: 950px) {
+    #carousel-text {
+        top: calc(100vw * 0.2615 / 2 * -1.3);
         font-size: 36px;
     }
-    #carousel-text-second-line{
+
+    #carousel-text-second-line {
         font-size: 30px;
     }
 }
@@ -97,7 +116,8 @@
         top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -2);
         font-size: 36px;
     }
-    #ship-container{
+
+    #ship-container {
         width: 80px;
         top: -60px;
     }
@@ -115,14 +135,15 @@
         top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -5);
         font-size: 24px;
     }
-    .social-img-container{
+
+    .social-img-container {
         width: 20px;
         top: -30px;
     }
 }
 
-@media (max-width: 550px){
-    #ship-container{
+@media (max-width: 550px) {
+    #ship-container {
         width: 65px;
         top: -55px;
     }
@@ -133,18 +154,19 @@
         top: calc(100vw * 0.2615 / 2 * -1.3 + 1vw * -6);
         font-size: 24px;
     }
-    #carousel-text-second-line{
+
+    #carousel-text-second-line {
         font-size: 18px;
     }
 
-    .social-img-container{
+    .social-img-container {
         width: 20px;
         top: -25px;
     }
 }
 
-@media (max-width: 400px){
-    #ship-container{
+@media (max-width: 400px) {
+    #ship-container {
         width: 55px;
         top: -45px;
     }

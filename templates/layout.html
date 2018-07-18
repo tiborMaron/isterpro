@@ -41,12 +41,14 @@
                                              src="{{ url_for("static", filename="images/carousel/insta.png") }}"
                                              alt="Instagram"></a>
     </div>
+    <div class="title {% block subpage_class %}{% endblock %}">{% block subpage_title %}BEMUTATKOZÁS{% endblock %}</div>
     <div id="ship-container">
         <a href="{{ url_for('logbook') }}"><img id="ship-img"
                                                 src="{{ url_for("static", filename="images/carousel/ship.png") }}"
                                                 alt="Logbook"></a>
     </div>
 </div>
+
 
 {% block content %}
 {% endblock %}
