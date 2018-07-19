@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block title %}Pályazataink - ISTER PRO-INVEST{% endblock %}
+{% block imageLocation %}{{ url_for("static", filename="images/carousel/palyazatok.png") }}{% endblock %}
+{% block firstlineText %}Pályázatok{% endblock %}
+{% block subpage_class %}tenders{% endblock %}
+{% block subpage_title %}PÁLYÁZATAINK{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row tender-image-container">
+        <a href="#">
+            <img class="tender-image" src="{{ url_for('static', filename = "images/tenders/ovoda.png") }}" alt="Óvodai pályázatok">
+        </a>
+        <a href="#">
+            <img class="tender-image" src="{{ url_for('static', filename = "images/tenders/altiskola.png") }}" alt="Általános iskolai pályázatok">
+        </a>
+        <a href="#">
+            <img class="tender-image" src="{{ url_for('static', filename = "images/tenders/kozepiskola.png") }}" alt="Középiskolai pályázatok">
+        </a>
+        <a href="#">
+            <img class="tender-image" src="{{ url_for('static', filename = "images/tenders/egyetem.png") }}" alt="Egyetemi, főiskolai pályázatok">
+        </a>
+    </div>
+</div>
+{% endblock %}

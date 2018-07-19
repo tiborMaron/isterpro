@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block title %}Partnereink - ISTER PRO-INVEST{% endblock %}
+{% block custom_imports %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js" defer></script>
+    <script src="{{ url_for('static', filename = "js/partners.js") }}" defer></script>
+{% endblock %}
+{% block imageLocation %}{{ url_for("static", filename="images/carousel/partnerek.png") }}{% endblock %}
+{% block firstlineText %}Partnerek{% endblock %}
+{% block subpage_class %}partners{% endblock %}
+{% block subpage_title %}PARTNEREINK{% endblock %}
+{% block bodyTags %}onload="draw();"{% endblock %}
+{% block content %}
+    <div id="mynetwork"></div>
+{% endblock %}

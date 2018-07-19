@@ -1,0 +1,75 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+}
+
+.index {
+    background-color: #2EBAD3;
+}
+
+.news {
+    background-color: #465FA8;
+}
+
+.partners {
+    background-color: #5CA595;
+}
+
+.programs {
+    background-color: #FFD80E;
+}
+
+.tenders {
+    background-color: #F2A745;
+}
+
+.supporters {
+    background-color: #E31E24;
+}
+
+.logbook {
+    background-color: #56698F;
+}
+
+.tiny-content {
+    padding: 2% 15%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content {
+    padding: 2% 15%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.content img {
+    float: left;
+    padding-right: 10px;
+}
+
+.tender-image-container {
+    margin: 0 auto;
+    padding: 80px 0;
+    width: auto;
+    align-items: center;
+}
+
+.tender-image-container a {
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
+}
+
+.tender-image {
+    width: 250px;
+}
+
+.tender-image:hover {
+    opacity: 0.8;
+}

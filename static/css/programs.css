@@ -1,0 +1,29 @@
+#flag-bar{
+    width: 100%;
+    text-align: center;
+}
+
+#row{
+    margin: 0 auto;
+    width: max-content;
+}
+
+#flag-bar .flag-cont{
+    height: 4vw;
+    display: inline-block;
+    padding-right: 2vw;
+}
+
+#flag-bar .flag-img{
+    height: 100%;
+    width: auto;
+    opacity: 0.60;
+}
+
+#flag-bar .flag-active{
+    opacity: 1;
+}
+
+.flag-cap{
+    font-size: 12px;
+}

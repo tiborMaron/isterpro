@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+{% block title %}Programjaink - ISTER PRO-INVEST{% endblock %}
+{% block imageLocation %}{{ url_for("static", filename="images/carousel/programok.png") }}{% endblock %}
+{% block firstlineText %}Programok{% endblock %}
+{% block subpage_class %}programs{% endblock %}
+{% block subpage_title %}PROGRAMJAINK{% endblock %}
+{% block content %}
+    <div id="flag-bar">
+        <div id="row">
+        <div class="flag-cont">
+            <img class="flag-img flag-active" id="de" src="{{ url_for("static", filename="images/flags/nemet.png") }}" alt="">
+            <figcaption class="flag-cap">NÉMETORSZÁG</figcaption>
+        </div>
+        <div class="flag-cont">
+            <img class="flag-img" id="au" src="{{ url_for("static", filename="images/flags/ausztria.png") }}" alt="">
+            <figcaption class="flag-cap">AUSZTRIA</figcaption>
+        </div>
+        <div class="flag-cont">
+            <img class="flag-img" id="sl" src="{{ url_for("static", filename="images/flags/szlovak.png") }}" alt="">
+            <figcaption class="flag-cap">SZLOVÁKIA</figcaption>
+        </div>
+        <div class="flag-cont">
+            <img class="flag-img" id="hu" src="{{ url_for("static", filename="images/flags/magyar.png") }}" alt="">
+            <figcaption class="flag-cap">MAGYARORSZÁG</figcaption>
+        </div>
+        <div class="flag-cont">
+            <img class="flag-img" id="hr" src="{{ url_for("static", filename="images/flags/horvat.png") }}" alt="">
+            <figcaption class="flag-cap">HORVÁRORSZÁG</figcaption>
+        </div>
+        <div class="flag-cont">
+            <img class="flag-img" id="srb" src="{{ url_for("static", filename="images/flags/szerbia.png") }}" alt="">
+            <figcaption class="flag-cap">SZERBIA</figcaption>
+        </div>
+        <div class="flag-cont">
+            <img class="flag-img" id="ro" src="{{ url_for("static", filename="images/flags/roman.png") }}" alt="">
+            <figcaption class="flag-cap">ROMÁNIA</figcaption>
+        </div>
+        <div class="flag-cont">
+            <img class="flag-img" id="bul" src="{{ url_for("static", filename="images/flags/bulgar.png") }}" alt="">
+            <figcaption class="flag-cap">BULGÁRIA</figcaption>
+        </div>
+        <div class="flag-cont">
+            <img class="flag-img" id="mol" src="{{ url_for("static", filename="images/flags/moldova.png") }}" alt="">
+            <figcaption class="flag-cap">MOLDOVA</figcaption>
+        </div>
+        <div class="flag-cont">
+            <img class="flag-img" id="ukr" src="{{ url_for("static", filename="images/flags/ukrajna.png") }}" alt="">
+            <figcaption class="flag-cap">UKRAJNA</figcaption>
+        </div>
+        </div>
+
+    </div>
+
+
+{% endblock %}
