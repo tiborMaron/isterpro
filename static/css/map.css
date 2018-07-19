@@ -13,12 +13,14 @@ h1, h2 {
     font-family: Fira Sans, sans-serif;
     font-style: italic;
     font-size: 22px;
-    color: #4F4F4F
+    color: #465FA8;
 }
 
 h1 {
-    font-weight: bolder;
-    font-size: 36px;
+    padding-left: 25px;
+    font-weight: 800;
+    font-size: 44px;
+    letter-spacing: 3px;
 }
 
 .container {
