@@ -1,0 +1,166 @@
+#navbar{
+    height: 5vw;
+    display: table;
+    padding-left: 6vw;
+}
+
+#navbar .menu-li{
+    list-style: none;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: calc(100vw/17);
+}
+
+#navbar .menu-li:hover{
+    background-color: #f7f7f7;
+}
+
+#navbar #supp{
+    height: 100%;
+    width: auto;
+}
+
+#navbar .menu-li-supp{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#navbar .menu-li-supp:hover{
+    background-color: #f7f7f7;
+}
+
+#navbar .menu-supp-cont{
+    height: 4.2vw;
+    text-align: center;
+}
+
+#navbar .menu-logo-cont{
+    height: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+
+
+#navbar #logo{
+    height: 100%;
+    width: auto;
+}
+
+#navbar figcaption{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 0.7vw;
+}
+
+#navbar .menu-point-cont{
+    height: 2.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+}
+
+#navbar .menu-point-img{
+    height: 100%;
+    width: auto;
+
+}
+
+#navbar .dots{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#navbar .dots-li{
+    text-align: center;
+    width: min-content;
+}
+
+#navbar .mobile-menu-cont{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#navbar .mobile-menu-li{
+    text-align: center;
+    width: min-content;
+    display: none;
+}
+
+#navbar .mobile-menu-li:hover{
+    background-color: white;
+}
+
+#navbar .dots-li:hover{
+    background-color: white;
+}
+
+#navbar .dots-li:hover .fas{
+    color: black;
+    transition-property: color;
+    transition-duration: 0.1s;
+}
+
+
+#navbar .fas{
+    font-size: 1.8vw;
+    color: gray;
+}
+
+#navbar .fa-bars{
+    color: black;
+}
+
+#navbar .flags{
+    padding-left: 23vw;
+    width: min-content;
+}
+
+#navbar .fas .fa-bars{
+    color: black;
+}
+
+#navbar .flags:hover{
+    background-color: white;
+}
+
+#navbar .flag-img{
+    display: inline;
+    height: 100%;
+    width: auto;
+}
+
+#navbar .flag-cont{
+    height: 1.7vw;
+}
+
+#navbar #placeholder{
+    width: 4vw;
+}
+
+#navbar #placeholder:hover{
+    background-color: white;
+    cursor: default;
+}
+
+#navbar .flag-img:hover{
+    cursor: pointer;
+}
+
+#navbar .menu-li:hover{
+    cursor: pointer;
+}
+
+#navbar .menu-li-supp:hover{
+    cursor: pointer;
+}
+
+#navbar .flags:hover{
+    cursor: default;
+}
+
