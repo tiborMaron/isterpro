@@ -148,11 +148,19 @@
     cursor: default;
 }
 
+#navbar .flag-img:hover{
+    cursor: pointer;
+}
+
 #navbar .menu-li:hover{
     cursor: pointer;
 }
 
 #navbar .menu-li-supp:hover{
     cursor: pointer;
+}
+
+#navbar .flags:hover{
+    cursor: default;
 }
 
