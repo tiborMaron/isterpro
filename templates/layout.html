@@ -43,9 +43,12 @@
     </div>
     <div class="title {% block subpage_class %}{% endblock %}">{% block subpage_title %}BEMUTATKOZÁS{% endblock %}</div>
     <div id="ship-container">
-        <a href="{{ url_for('logbook') }}"><img id="ship-img"
-                                                src="{{ url_for("static", filename="images/carousel/ship.png") }}"
-                                                alt="Logbook"></a>
+        <a href="{{ url_for('logbook') }}">
+            <figure>
+                <img id="ship-img" src="{{ url_for("static", filename="images/carousel/ship.png") }}" alt="Logbook">
+                <figcaption>Hajónapló</figcaption>
+            </figure>
+        </a>
     </div>
 </div>
 
